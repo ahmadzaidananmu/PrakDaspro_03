@@ -4,6 +4,7 @@ public class StudiKasus1_03 {
     public static void main(String[] args) {
     Scanner zae = new Scanner (System.in);
     int hargaCup=18_000,hargaTotal,jumlahCup,uangBayar,totalBayar,diskon,kembalian,kurang;
+    //hargaCup=15_000+(3 mod 6)x1_000=18_000
 
     System.out.print("Masukkan jumlah cup\t: ");
     jumlahCup=zae.nextInt();
@@ -12,8 +13,10 @@ public class StudiKasus1_03 {
 
     hargaTotal=jumlahCup*hargaCup;
     diskon=0;
-    if (hargaTotal>=100_000) {
-        diskon=hargaTotal*10/100;
+    if (hargaTotal>=110_000) {
+        //hargaTotal>=80_000+(3 mod 5)x10_000=110_000
+        diskon=hargaTotal*8/100;
+        //diskon=5+(3 mod 6)%=8%
     }
     totalBayar=hargaTotal-diskon;
 
@@ -26,7 +29,7 @@ public class StudiKasus1_03 {
         System.out.println("Kembalian\t: "+kembalian);
     }else{
         kurang=totalBayar-uangBayar;
-        System.out.println("Kurang\t\t: "+kurang);
+        System.out.println("Kurang\t\t\t: "+kurang);
     }
     zae.close();
     }
