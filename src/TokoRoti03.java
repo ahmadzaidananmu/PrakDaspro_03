@@ -21,7 +21,7 @@ public class TokoRoti03 {
     System.out.println("laba : "+intlaba);
     System.out.println("Tiap pegawai mendapat : Rp."+bagianPegawai);
     System.out.println("Sisa yang masuk kas : Rp."+intKas);
-    //cek repo
+    //cek repoo
 
     zae.close();
     /*Kotak terjual hari ini: 200
