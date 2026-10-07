@@ -20,6 +20,7 @@ public class NestedAksesLAb03 {
                 akses="Akses laboratorium diberikan";
             }else{
                 akses="Akses ditolak : Membutuhkan izin dosen atau status asisten lab";
+                //cek
             }
         }else{
             akses="Akses ditolak : Status mahasiswa tidak memenuhi syarat";
