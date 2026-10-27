@@ -34,8 +34,12 @@ public class SiakadWhile03 {
                 grade="E";
             }
             System.out.println("Grade mahasiswa ke"+i+" : "+grade);
+            if (grade=="A") {
+                System.out.println("Bagus, pertahankan nilainya");
+            }
 
             i++;
         }
+        zae.close();
     }
 }
