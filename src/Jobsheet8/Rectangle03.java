@@ -22,7 +22,7 @@ public class Rectangle03 {
 
     for (int i = 1; i <= kolom; i++) {
         for (int j = 1; j <= baris; j++) {
-            System.out.print("* ");
+            System.out.print("# ");
         }
         System.out.println();
     }
