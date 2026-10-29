@@ -11,8 +11,8 @@ public class Star03 {
         System.out.print("Masukkan nilai N : ");
         int n =zaeInt.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            System.out.print("*");
+        for (int i = 1; i <= n; i+=2) {
+            System.out.print(i+" ");
         }
         System.out.println();
         zaeInt.close();
