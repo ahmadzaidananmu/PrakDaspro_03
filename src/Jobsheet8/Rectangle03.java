@@ -15,9 +15,9 @@ public class Rectangle03 {
 
     int baris=0,kolom=0;
 
-    System.out.print("Masukkan jumlah kolom : ");
-    baris=zaeInt.nextInt();
     System.out.print("Masukkan jumlah baris : ");
+    baris=zaeInt.nextInt();
+    System.out.print("Masukkan jumlah kolom : ");
     kolom=zaeInt.nextInt();
 
     for (int i = 1; i <= kolom; i++) {
