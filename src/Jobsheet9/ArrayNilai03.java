@@ -13,13 +13,17 @@ public class ArrayNilai03 {
             }
         
         int nomor =1;
+        int lulus=0,tidakLulus=0;
         for (int nilai : nilaiAkhir) {
             String status = (nilai > 70) ? "Lulus" : "Tidak Lulus";
             if (status.equalsIgnoreCase("lulus")) {
                 System.out.println("Mahasiswa ke-" + nomor + ": " + nilai + " (" + status + ") ");
-            }
+                lulus++;
+            }else tidakLulus++;
         nomor++;
         }
+        System.out.println("Jumlah mahasiswa lulus :"+lulus);
+        System.out.println("Jumlah mahasiswa tidak lulus :"+tidakLulus);
         zae.close();
     }
 }
