@@ -1,9 +1,22 @@
 package Jobsheet9;
-
+import java.util.Scanner;
 public class SearchNilai03 {
     public static void main(String[] args) {
-        int nilai[]={78,65,90,55,88,72};
-        int key=53;
+        Scanner zae = new Scanner (System.in);
+        int jumlah;
+        System.out.print("Masukkan jumlah nilai : ");
+        jumlah=zae.nextInt();
+        int nilai[]=new int [jumlah];
+        
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.print("Masukkan nilai ke-"+(i+1)+" : ");
+            nilai[i]=zae.nextInt();
+        }
+        
+        int key;
+        System.out.print("Masukkan key yang ingin dicari: ");
+        key=zae.nextInt();
+        
         boolean ditemukan=false;
 
         for (int i = 0; i < nilai.length; i++) {
@@ -16,5 +29,6 @@ public class SearchNilai03 {
         if (!ditemukan) {
             System.out.println("Nilai "+key+" tidak ditemukan");
         }
+    zae.close();
     }
 }
