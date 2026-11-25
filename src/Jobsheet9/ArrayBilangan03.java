@@ -5,11 +5,8 @@ import java.util.Arrays;
 public class ArrayBilangan03 {
     public static void main(String[] args) {
         
-        int bil [] = new int[4];
-        bil[0]=3;
-        bil[1]=11;
-        bil[2]=-4;
-        bil[3]=223;
+        int bil [] = {3,11,-4,233};
+
 
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil["+i+"] = "+bil[i]);
