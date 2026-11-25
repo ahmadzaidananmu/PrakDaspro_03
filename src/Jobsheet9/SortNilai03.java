@@ -2,7 +2,7 @@ package Jobsheet9;
 import java.util.Arrays;
 public class SortNilai03 {
     public static void main(String[] args) {
-        int nilai[]={78,65,90,55,88,72};
+        int nilai[]={23,38,15,53,3,28};
 
         for (int i = 0; i < nilai.length-1; i++) {
             for (int j = 0; j < nilai.length-1-i; j++) {
