@@ -1,3 +1,5 @@
+/*kesalahan  equaliqis pas yg t,
+ketuker tugas 1*/
 import java.util.Scanner;
 public class NilaiMhs_03_ {
     public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class NilaiMhs_03_ {
             System.out.print("Ingin mengisi nilai mahasiswa (y/t)");
 
             isi=zaeString.nextLine();
-            if (isi=="t") {
+            if (isi.equalsIgnoreCase("t")) {
                 break;
             }
             jumMaha++;
@@ -34,11 +36,11 @@ public class NilaiMhs_03_ {
                 NAflat+=uas*0.3;
                 do {
                     System.out.println("Masukkan nilai tugas 1 ");
-                    kumpulTugas+=tugas1;
+                    tugas1=zaeInt.nextInt();
                     if (tugas1<0||tugas1>100) {
                         System.out.println("ulangi input");
                     }
-                    tugas1=zaeInt.nextInt();
+                    kumpulTugas+=tugas1;
                 } while (tugas1<0||tugas1>100);
                 do {
                     
