@@ -1,0 +1,20 @@
+package Jobsheet9;
+
+public class SearchNilai03 {
+    public static void main(String[] args) {
+        int nilai[]={78,65,90,55,88,72};
+        int key=53;
+        boolean ditemukan=false;
+
+        for (int i = 0; i < nilai.length; i++) {
+            if (key==nilai[i]) {
+                System.out.println("Nilai "+key+" ditemukan pada indeks ke-"+i);
+                ditemukan= true;
+                break;
+            }
+        }
+        if (!ditemukan) {
+            System.out.println("Nilai "+key+" tidak ditemukan");
+        }
+    }
+}
