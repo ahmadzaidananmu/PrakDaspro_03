@@ -27,7 +27,7 @@ public class SearchNilai03 {
             }
         }
         if (!ditemukan) {
-            System.out.println("Nilai "+key+" tidak ditemukan");
+            System.out.println("Nilai "+key+" tidak ditemukan dalam array (diperiksa "+nilai.length+" elemen, indeks 0-"+(nilai.length-1)+")");
         }
     zae.close();
     }
