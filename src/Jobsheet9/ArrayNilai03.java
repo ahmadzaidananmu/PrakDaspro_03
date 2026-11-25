@@ -11,7 +11,9 @@ public class ArrayNilai03 {
         }
         for (int i = 0; i < nilaiAkhir.length; i++) {
             String status = (nilaiAkhir[i]>70)?"Lulus":"Tidak Lulus";
-            System.out.println("Mahasiswa ke-"+(i+1)+": "+nilaiAkhir[i]+" ("+status+") ");
+            if (status.equalsIgnoreCase("Lulus")) {
+                System.out.println("Mahasiswa ke-"+(i+1)+": "+nilaiAkhir[i]+" ("+status+") ");
+            }
         }
         zae.close();
     }
